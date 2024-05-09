@@ -1,0 +1,558 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alrawafid</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+    <!--Header-->
+    <div class="header">
+        <div class="container">
+        <div class="navbar">
+            <div class="logo"><img src="images/alrawafid.png" alt="" width="125px "></div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">الصفحة الرئيسية</a></li>
+                    <li><a href="about.html">نبذة عننا</a></li>
+                    <li><a href="offers.html">العروض</a></li>
+                    <li><a href="orders.html">الطلبات</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="icon-menu" onclick="mentoggle()"><i  class="fa-solid fa-bars" ></i></div>
+        </div>
+        </div>
+        </div>
+        <br><br>
+        <div class="small-container">
+            <h2 class="title">العروض العقارية</h2>
+        </div>
+
+         <!--filters-->
+        <div class="Offers_container">
+            <div class="filter_buttons">
+                <button  data-name="lands">اراضي</button>
+                <button  data-name="shops">محلات تجارية</button> 
+                <button  data-name="villas">الفلل</button>
+                <button  data-name="buildings">عمارات</button>
+                <button  data-name="apartments">شقق</button>
+                <button  class="active" data-name="all">الكل</button>
+            </div>    
+        </div>
+        <!--Images Cards-->
+
+        <div class="filterable_cards">
+
+            <!--1-->
+            <div class="card" data-name="buildings">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">عمارة مشرفة</h6>
+                <p class="card_text">الموقع : جدة - مشرفة</p>
+                <p class="card_text">المساحة : مساحات مختلفة</p>
+                <p class="card_text">نوع العرض : شقق تمليك</p>
+                <p class="card_text">تفاصيل العقار : التواصل مع الاستاذ عبدالرحمن</p>
+                <p class="card_text">السعر : مختلفة</p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+            
+            <!--2-->
+            <div class="card" data-name="buildings">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">عمارة حي السلامة</h6>
+                <p class="card_text">الموقع : جدة - حي السلامة</p>
+                <p class="card_text">المساحة : مساحات مختلفة</p>
+                <p class="card_text">نوع العرض : شقق تمليك</p>
+                <p class="card_text">تفاصيل العقار : 5غرف و 4دورات مياه مدخلين صالة غرفة خادمة غاز مركزي خزان مستقل غرفة سائق</p>
+                <p class="card_text">السعر : مختلفة</p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+
+             <!--3-->
+        
+             <div class="card" data-name="buildings">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">عمارة السليمانية</h6>
+                <p class="card_text">الموقع : جدة - السليمانية درب الحرمين</p>
+                <p class="card_text">المساحة : 230م2</p>
+                <p class="card_text">نوع العرض : شقق تمليك</p>
+                <p class="card_text">تفاصيل العقار : 5غرف 5حمامات مدخلين غرفة سائق خزان ارضي وعلوي</p>
+                <p class="card_text">السعر : الخارجية 800الف ريال ,الداخلية 750 ألف ريال</p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+
+            <!--4-->
+            <div class="card" data-name="apartments">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">شقق النسيم</h6>
+                <p class="card_text">الموقع : جدة - حي النسيم</p>
+                <p class="card_text">المساحة : 1822م2</p>
+                <p class="card_text">نوع العرض : شقق تمليك</p>
+                <p class="card_text">تفاصيل العقار : 5غرف 3حمامات غرفة سائق خزان مستقل الدور الثالث والدور الرابع</p>
+                <p class="card_text">السعر : 700 ألف ريال</p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+
+            
+            <!--5-->
+            <div class="card" data-name="apartments">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">شقة السامر</h6>
+                <p class="card_text">الموقع : جدة - حي السامر خلف محطة الأماكن</p>
+                <p class="card_text">المساحة : 1922م2</p>
+                <p class="card_text">نوع العرض : شقق تمليك</p>
+                <p class="card_text">تفاصيل العقار : 5غرف 3دورات مياه مدخلين خزان مستقل عمرها 7 سنوات</p>
+                <p class="card_text">السعر : 600 ألف ريال</p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+
+
+             <!--6-->
+             <div class="card" data-name="apartments">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">شقق المنار</h6>
+                <p class="card_text">الموقع : جدة - حي المنار</p>
+                <p class="card_text">المساحة : مختلفة</p>
+                <p class="card_text">نوع العرض : شقق تمليك</p>
+                <p class="card_text">تفاصيل العقار : عند التواصل</p>
+                <p class="card_text">السعر : عند التواصل</p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+                <!--7-->
+            <div class="card" data-name="apartments">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">شقق المنار</h6>
+                <p class="card_text">الموقع : جدة - حي المنار</p>
+                <p class="card_text">المساحة : مختلفة</p>
+                <p class="card_text">نوع العرض : شقق تمليك</p>
+                <p class="card_text">تفاصيل العقار : عند التواصل</p>
+                <p class="card_text">السعر : عند التواصل</p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+
+            <!--8-->
+            <div class="card" data-name="buildings">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">عمارة الحمراء</h6>
+                <p class="card_text">الموقع : جدة - مخطط الحمراء</p>
+                <p class="card_text">المساحة : 4802</p>
+                <p class="card_text">نوع العرض : عمارة للبيع</p>
+                <p class="card_text">تفاصيل العقار :6ادوار 10 شقق كل شقة 5 غرف 2 دورات مياه و3غرف وغرفتين وغرفة</p>
+                <p class="card_text">السعر : 4مليون ونص ريال</p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+
+
+            <!--9-->
+            <div class="card" data-name="buildings">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">عمارة الستين</h6>
+                <p class="card_text">الموقع : مكة المكرمة - حي النزهة - شارع الستين</p>
+                <p class="card_text">المساحة : -</p>
+                <p class="card_text">نوع العرض : عمارة للبيع وشقق مفروشة</p>
+                <p class="card_text">تفاصيل العقار : شقق مفروشة 40شقة 4محلات تجارية الشقق مفروشة ومصرحة</p>
+                <p class="card_text">السعر : 17مليون ريال</p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+            <!--10-->
+            <div class="card" data-name="villas">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">فيلا عبدالرحمن الداخل</h6>
+                <p class="card_text">الموقع : جدة شارع عبد الرحمن الداخل</p>
+                <p class="card_text">المساحة : 1080م2</p>
+                <p class="card_text">نوع العرض : بيع</p>
+                <p class="card_text">تفاصيل العقار : فلتين على الشارع الظاهري ارض مساحتها 540م2 على شارع تجاري</p>
+                <p class="card_text">السعر : 7000للمتر</p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+            <!--11-->
+            <div class="card" data-name="villas">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">فلة مستشفى السعودي </h6>
+                <p class="card_text">الموقع : خلف مستشفى السعودي الألماني</p>
+                <p class="card_text">المساحة : 600م</p>
+                <p class="card_text">نوع العرض : بيع</p>
+                <p class="card_text">تفاصيل العقار :فلتين مساحة كل فلة 300م2 عرض 12 سنة</p>
+                <p class="card_text">السعر : 5مليون ريال</p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+
+            <!--12-->
+
+            <div class="card" data-name="apartments">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">شقة برج الفارسي</h6>
+                <p class="card_text">الموقع : شارع صاري  برج الفارسي</p>
+                <p class="card_text">المساحة : 500م2</p>
+                <p class="card_text">نوع العرض : بيع او ايجار</p>
+                <p class="card_text">تفاصيل العقار :7غرف مطلة على البحر 3غرف ماستر 4 صالات الدور 11</p>
+                <p class="card_text">السعر :150ايجار 6مليون بيع </p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+
+            <!--13-->
+            <div class="card" data-name="buildings">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">عمارة المروة</h6>
+                <p class="card_text">الموقع : جدة - المروة 2</p>
+                <p class="card_text">المساحة : 400م2</p>
+                <p class="card_text">نوع العرض : بيع</p>
+                <p class="card_text">تفاصيل العقار :عمارة 3ادوار وملحق عمرها 15 سنة نظيفة مقابل الحديقة بجوار سهيل بن عبدالله</p>
+                <p class="card_text">السعر : 2مليون و500 الف</p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+            <!--14-->
+            <div class="card" data-name="buildings">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">برج الامير سلطان</h6>
+                <p class="card_text">الموقع : جدة شارع الامير سلطان</p>
+                <p class="card_text">المساحة : 3000م3</p>
+                <p class="card_text">نوع العرض : بيع</p>
+                <p class="card_text">تفاصيل العقار :مبنى تجاري اداري</p>
+                <p class="card_text">السعر : 50مليون</p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+
+            <!--15-->
+            <div class="card" data-name="apartments">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">شقة النسيم 2</h6>
+                <p class="card_text">الموقع : جدة - النسيم الجديد بجوار الحرس الوطني</p>
+                <p class="card_text">المساحة : 190م2</p>
+                <p class="card_text">نوع العرض : بيع</p>
+                <p class="card_text">تفاصيل العقار :5غرف 3دورات مياه الدور الثالث عمرها 9 سنوات مقابل الشرطة وبجوار الحرس الوطني وامام مسجد وحديقة</p>
+                <p class="card_text">السعر : 650الف</p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+            <!--16-->
+            <div class="card" data-name="lands">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">ارض حراء</h6>
+                <p class="card_text">الموقع : جدة - المروة شارع حراء</p>
+                <p class="card_text">المساحة : 750م2</p>
+                <p class="card_text">نوع العرض : بيع</p>
+                <p class="card_text">تفاصيل العقار :ارض مقام عليها مركز تجاري لكيا مؤجرة 450 الف ريال</p>
+                <p class="card_text">السعر : 10مليون</p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+            <!--17-->
+            <div class="card" data-name="lands">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">ارض مخطط الرياض</h6>
+                <p class="card_text">الموقع : مخطط الرياض</p>
+                <p class="card_text">المساحة : 625م2</p>
+                <p class="card_text">نوع العرض : بيع</p>
+                <p class="card_text">تفاصيل العقار :ارض سكنية على شارع 15م2 بجوار مستوصف الرحمة</p>
+                <p class="card_text">السعر : مليون</p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+            <!--18-->
+            <div class="card" data-name="lands">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">ارض مكة</h6>
+                <p class="card_text">الموقع : طريق مكة الطائف </p>
+                <p class="card_text">المساحة : 16000م2</p>
+                <p class="card_text">نوع العرض : مخطط محطة</p>
+                <p class="card_text">تفاصيل العقار :ارض على الشارع العام يوجد عليها ترخيص من البلدية محطة وقود والعقد 20 سنة</p>
+                <p class="card_text">السعر : 400عشر سنوات الأولى 500 و 600 الف</p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+            <!--19-->
+            <div class="card" data-name="lands">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">ارض الروضة</h6>
+                <p class="card_text">الموقع : الروضة</p>
+                <p class="card_text">المساحة : 10000م2</p>
+                <p class="card_text">نوع العرض : استثمارية</p>
+                <p class="card_text">تفاصيل العقار :ارض على ثلاثة شوارع مسورة مدة العقد 15 سنة الى 20 سنة على حسب النشاط</p>
+                <p class="card_text">السعر : 400 الف</p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+            <!--20-->
+            <div class="card" data-name="villas">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">فيلا ابحر</h6>
+                <p class="card_text">الموقع : ابحر الجنوبية دوار الجمل بجوار الكورنيش الجديد</p>
+                <p class="card_text">المساحة : 310م2</p>
+                <p class="card_text">نوع العرض : بيع او ايجار</p>
+                <p class="card_text">تفاصيل العقار :على شارع 15 شمالي دورين ونص الأرضي مجلس رجال ومجلس نساء مع دورات مياه ومطبخ والدور الثاني 5 غرف مع 5 دورات مياه </p>
+                <p class="card_text">السعر :   3مليون و500 الف ريال والايجار 250 الف</p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+            <!--21-->
+            <div class="card" data-name="lands">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">ارض الامير سلطان</h6>
+                <p class="card_text">الموقع : طريق الأمير سلطان </p>
+                <p class="card_text">المساحة : 118الف و12 متر</p>
+                <p class="card_text">نوع العرض : بيع</p>
+                <p class="card_text">تفاصيل العقار :صق محدث الحدود والاطوال : الطول على طريق شارع الأمير سلطان 265متر مربع الحدود شمالا شارع عرض 32 متر بطول 396متر</p>
+                <p class="card_text">السعر : 3500للمتر</p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+            <!--22-->
+            <div class="card" data-name="apartments">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">شقة المروة</h6>
+                <p class="card_text">الموقع : حي المروة</p>
+                <p class="card_text">المساحة : 180م2</p>
+                <p class="card_text">نوع العرض : بيع</p>
+                <p class="card_text">تفاصيل العقار :روف 5غرف مساحة المباني 180 مساحة السطح 67 المساحة الاجمالية 247 </p>
+                <p class="card_text">السعر : 730الف ريال</p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+            <!--23-->
+            <div class="card" data-name="lands">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">ارض الحمدانية</h6>
+                <p class="card_text">الموقع : </p>
+                <p class="card_text">المساحة : </p>
+                <p class="card_text">نوع العرض : </p>
+                <p class="card_text">تفاصيل العقار :</p>
+                <p class="card_text">السعر : </p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+            <!--24-->
+            <div class="card" data-name="villas">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">فلل ابحر</h6>
+                <p class="card_text">الموقع : جدة - ابحر - حي النور</p>
+                <p class="card_text">المساحة : 200متر</p>
+                <p class="card_text">نوع العرض : بيع</p>
+                <p class="card_text">تفاصيل العقار :نظام مفتوح درج داخلي الدور الأرضي مجلس مقلط ودورات مياه ومغاسل + صالة كبيرة + مطبخ لها مدخلين امامي وجانبي جميع الخدمات فيها </p>
+                <p class="card_text">السعر : 950الف </p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+            <!--25-->
+            <div class="card" data-name="buildings">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">عمارة مشرفة</h6>
+                <p class="card_text">الموقع : جدة - حي مشرفة</p>
+                <p class="card_text">المساحة : 1000متر2</p>
+                <p class="card_text">نوع العرض : بيع</p>
+                <p class="card_text">تفاصيل العقار :3ادوار تقع على 3 شوارع واجهة رخام العمر 30 سنة مكونة من 12 شقة كل شقة من 4 غرف وصالة ودورتين مياه قريبة من شارع المكرونة</p>
+                <p class="card_text">السعر : 5مليون ريال</p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+            <!--26-->
+            <div class="card" data-name="apartments">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">شقة السندس</h6>
+                <p class="card_text">الموقع : حي السندس</p>
+                <p class="card_text">المساحة : 130متر2</p>
+                <p class="card_text">نوع العرض : بيع</p>
+                <p class="card_text">تفاصيل العقار :3شقق كلها نفس بعض 4 غرف و3 دورات مياه ومدخلين وصالة وغرفة سائق لكل شقة </p>
+                <p class="card_text">السعر : 530الف ريال </p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+            <!--27-->
+            <div class="card" data-name="apartments">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">شقة النزهة</h6>
+                <p class="card_text">الموقع : حي النزهة</p>
+                <p class="card_text">المساحة : 185متر2</p>
+                <p class="card_text">نوع العرض : بيع</p>
+                <p class="card_text">تفاصيل العقار :5غرف صالة 4 دورات مياه مطبخ غرفة سائق خزان مستقل عزل مائي موقف سيارة خاص </p>
+                <p class="card_text">السعر : من 700 الف ريال اذا كاش 599 الف ريال وعلى البنك 630 الف ريال</p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+            <!--28-->
+            <div class="card" data-name="apartments">
+                <img src="/images/firstpic.png">
+                <div class="card_body"></div>
+                <h6 class="card_title">شقق الريال</h6>
+                <p class="card_text">الموقع : جدة - حي الريان</p>
+                <p class="card_text">المساحة :  160متر2</p>
+                <p class="card_text">نوع العرض : بيع</p>
+                <p class="card_text">تفاصيل العقار :5غرف صاله 3دورات مياه مدخلين خزان علوي وسفلي موقف خاص الملاحق مختلفه يوجد 5غرف و6غرف مساحاتها 200</p>
+                <p class="card_text">السعر : من 720 الى 750 تقبل البنك</p>
+                <br>
+                <a href="alsalama.html"><p class="card_text">صور العقار</p></a>
+            </div>
+
+          
+
+
+
+
+
+
+           
+
+
+        
+        
+        </div>
+
+
+        <div class="main_offers_page"></div>
+
+
+
+
+
+
+
+    
+                                         <!--Footer-->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>! حمل تطبيقنا </h3>
+                        <p>قم بتحميل التطبيق الخاص بشركتنا على الاندرويد والايفون</p>
+                        <div class="app-logo">
+                            <img src="/images/play-store.png" alt="">
+                            <img src="/images/app-store.png" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="/images/alrawafid.png" width="125px">
+                        <p><i class="fa-solid fa-copyright"></i>  جميع الحقوق محفوظة</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>عنوان الشركة</h3>
+                        <ul>
+                            <li>المملكة العربية السعودية - جدة</li>
+                            <li>طريق الملك عبد العزيز - شارع سليمان بن عتيق</li>
+                            <a href="https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%85%D9%8A+%D9%85%D8%AD%D9%85%D8%AF+%D8%AC%D8%A7%D8%A8%D8%B1+%D8%A7%D9%84%D8%B4%D9%87%D8%B1%D9%8A%E2%80%AD/@21.606605,39.1194701,1048m/data=!3m1!1e3!4m15!1m8!3m7!1s0x15c3dbb97b7a456b:0xd77a1efe79db1eaa!2z2YXZg9iq2Kgg2KfZhNmF2K3Yp9mF2Yog2YXYrdmF2K8g2KzYp9io2LEg2KfZhNi02YfYsdmK!8m2!3d21.606605!4d39.1194701!10e1!16s%2Fg%2F11tjppt5_f!3m5!1s0x15c3dbb97b7a456b:0xd77a1efe79db1eaa!8m2!3d21.606605!4d39.1194701!16s%2Fg%2F11tjppt5_f?entry=ttu"><li>الموقع الجغرافي &#10146</li></a>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>تابعنا</h3>
+                        <ul>
+                            <li><i class="fa-brands fa-x-twitter"></i> Twitter</li>
+                            <li><i class="fa-brands fa-snapchat"></i> SnapChat</li>
+                            <li><i class="fa-brands fa-instagram"></i> Instagram</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--Javascript for toggle menu-->
+        <script>
+            let MenuItems = document.getElementById("MenuItems");
+            MenuItems.style.maxHeight="0px";
+            function mentoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight="200px";
+                }
+                else{
+                    MenuItems.style.maxHeight="0px"
+                }
+    
+            }
+            //filters 
+
+            const filterButtons = document.querySelectorAll(".filter_buttons button");
+            const filterableCards = document.querySelectorAll(".filterable_cards .card");
+            
+            const filterCards = e => {
+                document.querySelector(".active").classList.remove("active");
+                e.target.classList.add("active");
+            
+
+            filterableCards.forEach(card => {
+                card.classList.add("hide");
+
+                if(card.dataset.name === e.target.dataset.name || e.target.dataset.name === "all"){
+                    card.classList.remove("hide");
+                }
+                
+            });
+        };
+
+
+            filterButtons.forEach(button => button.addEventListener("click",filterCards));
+        </script>
+</body>
+</html>
